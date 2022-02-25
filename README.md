@@ -8,7 +8,7 @@ Below is the project's screenshot:
 #### Live link to site
 The project was deployed to Heroku and GitHub pages for publication.     
 * To view the [project's Heroku live site](#).         
-* To view the [project's Figma mockup design](#).
+* To view the [project's Figma mockup design](https://www.figma.com/file/D2QBpx8H9rXzuzgaAyBaOk/Django_photo_gallery?node-id=0%3A1).
 
 ## Application Setup Instructions
 - Open Terminal {Ctrl+Alt+T}     
@@ -67,8 +67,10 @@ Follow along with this [Deployment Documentation](https://gist.github.com/newton
 
 ## Built With
 
-* [Django](https://docs.djangoproject.com/en/4.0/) - The web framework used
-* [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) - The Styling framework used
+* [Python](https://docs.python.org/3/)        
+* [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)       
+* [Django](https://docs.djangoproject.com/en/4.0/)       
+* [Heroku](https://devcenter.heroku.com/categories/reference)       
 
 
 ## Authors
