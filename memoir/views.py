@@ -14,3 +14,13 @@ def gallery(request) :
   return HttpResponse('<h1>Gallery Page<h1>')
 
 
+
+def about(request) :
+
+  return HttpResponse('<h1>About Page<h1>')
+
+
+
+def login(request) :
+
+  return HttpResponse('<h1>Login Page<h1>')
