@@ -1,3 +1,21 @@
-* {
-  background-color: aquamarine;
+/* Font for the Links and Navigation links 
+font-family: 'Marcellus', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+/* Font for the Paragraghs 
+font-family: 'Karma', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Karma&display=swap');
+/* Font for the Titles and Headings 
+font-family: 'Old Standard TT', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
+
+a, button {
+  font-family: 'Marcellus', serif;
+}
+
+p {
+  font-family: 'Karma', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Old Standard TT', serif;
 }
