@@ -2,7 +2,7 @@
 
 A personal gallery application that I display my photos for others to see.     
 Below is the project's screenshot:     
-![Django_photo_gallery_Screenshot](#)
+![Django_photo_gallery_Screenshot](https://github.com/ShaviyaVictor/Django-photo-gallery/blob/main/memoir/static/memoir/images/Home.Screenshot.png)
 
 
 #### Live link to site
