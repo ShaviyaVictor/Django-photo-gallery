@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* NavBar Styles */
 nav.bg-light {
+  /* background-color: #451F25 !important; */
   background-color: #451F25 !important;
 }
 
@@ -61,10 +62,50 @@ li a:focus {
 
 
 
+/* Styling the footer section */
+
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #451F25;
+  padding: 0.3em;
+}
+
+.mt-2em {
+  margin: 3em 0em 3em 0em !important;
+}
+
+.icons {
+  display: inline !important;
+}
+
+.futa {
+  margin: 1em;
+  color: #C7C7A9 !important;
+  font-size: 1.3em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.futa:hover {
+  color: #fff !important;
+}
+
+
+
+
+
+
+
 /* Small devices (portrait tablets and large phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   a.navbar-brand {
     font-size: 1.8rem;
     margin: 0em;
   }
+
+  
 }
