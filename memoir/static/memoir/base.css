@@ -8,6 +8,9 @@ font-family: 'Karma', serif; */
 font-family: 'Old Standard TT', serif; */
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
 
+
+
+/* Global Styles */
 a, button {
   font-family: 'Marcellus', serif;
 }
@@ -18,4 +21,50 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Old Standard TT', serif;
+}
+
+
+/* NavBar Styles */
+nav.bg-light {
+  background-color: #451F25 !important;
+}
+
+nav li a, a.navbar-brand{
+  color: #fff !important;
+}
+
+a.navbar-brand {
+  font-size: 2em;
+  margin: 0em 2em;
+}
+
+li a {
+  margin-right: 1em;
+}
+
+li a:hover {
+  color: #EEEEDB;
+  text-decoration: underline;
+}
+
+li a:focus {
+  color: #C7C7A9;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  a.navbar-brand {
+    font-size: 1.8rem;
+    margin: 0em;
+  }
 }
