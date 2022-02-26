@@ -1,0 +1,32 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <!-- head section to hold our page specific title -->
+  <head>
+
+
+
+  </head>
+  <body>
+    
+    <h1>
+      Memoir Gallery Page
+    </h1>
+
+    {% for memory in memories %}
+      <h2>
+        {{ memory.title }}
+      </h2>
+      <p>
+        By {{ memory.source }} on {{ memory.date_posted }}
+      </p>
+      <p>
+        {{ memory.description }}
+      </p>
+    {% endfor %}
+    
+  </body>
+</html>

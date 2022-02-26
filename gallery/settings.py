@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'memoir.apps.MemoirConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,26 +1,48 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+
+
+memories = [
+
+  {
+    'source':'Victor Shaviya',
+    'title':'Rugby adventure.',
+    'description':'Rugby life has been a wonderful adventure all throughout.',
+    'date_posted':'August 20, 2020'
+  },
+  {
+    'source':'Mean Machine',
+    'title':'Embu Sevens.',
+    'description':'Rugby life has been a wonderful adventure all throughout.',
+    'date_posted':'August 20, 2018'
+  }
+
+]
 
 
 # Create your views here.
 def home(request) :
 
-  return HttpResponse('<h1>Memoir Home Page<h1>')
+  return render(request, 'memoir/home.html')
 
 
 
 def gallery(request) :
 
-  return HttpResponse('<h1>Gallery Page<h1>')
+  context = {
+    'memories':memories
+  }
+
+
+  return render(request, 'memoir/gallery.html', context)
 
 
 
 def about(request) :
 
-  return HttpResponse('<h1>About Page<h1>')
+  return render(request, 'memoir/about.html')
 
 
 
 def login(request) :
 
-  return HttpResponse('<h1>Login Page<h1>')
+  return render(request, 'memoir/login.html')
