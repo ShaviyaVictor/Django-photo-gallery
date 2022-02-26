@@ -1,0 +1,40 @@
+
+
+
+
+body {
+  margin: 0px;
+  color: #F2F2F2;
+  /* text-align: center; */
+  background-color: #B8775D;
+  background-image: url('../memoir/images/background_anna-jimenez-calaf.jpg');
+  background-size: cover;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+}
+
+.btn-primary {
+  background-color: #EEEEDB !important;
+  color: #381016;
+}
+
+.btn-primary:hover {
+  background-color: #ffffff !important;
+  color: #381016;
+  transition: 0.5s;
+}
+
+.merge {
+  margin: 20%;
+}
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+
+  
+}

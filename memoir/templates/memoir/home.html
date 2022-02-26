@@ -1,11 +1,15 @@
 {% extends 'memoir/base.html' %}
 
+{% load static %}
+
 {% block content %}
 
 <!DOCTYPE html>
 <html>
   <!-- head section to hold our page specific title -->
   <head>
+
+    <link rel="stylesheet" href="{% static 'memoir/home.css' %}">
 
     <title>
       Home
@@ -14,11 +18,19 @@
   </head>
   <body>
     
-    <div class="container">
-      <h1>
-        Memoir Home Page
-      </h1>      
+    <div class="container-fluid">
+
+      <div class="merge">
+
+        <h1>
+          Welcome to MyMemoir...
+        </h1>
+        <button type="button" class="btn btn-primary btn-lg">CHECK IT OUT</button>
+
+      </div>
+
     </div>
+    
     
   </body>
 </html>
