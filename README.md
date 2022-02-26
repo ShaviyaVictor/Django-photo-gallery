@@ -7,7 +7,7 @@ Below is the project's screenshot:
 
 #### Live link to site
 The project was deployed to Heroku and GitHub pages for publication.     
-* To view the [project's Heroku live site](https://github.com/ShaviyaVictor/Django-photo-gallery/blob/main/memoir/static/memoir/images/Home.Screenshot.png).         
+* To view the [project's Heroku live site](#).         
 * To view the [project's Figma mockup design](https://www.figma.com/file/D2QBpx8H9rXzuzgaAyBaOk/Django_photo_gallery?node-id=0%3A1).
 
 ## Application Setup Instructions
