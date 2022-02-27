@@ -20,9 +20,11 @@
       </h1>
     </div>    
 
-    {% for memory in memories %}
+    <!-- {% for memory in memories %}
       <h2>
-        {{ memory.title }}
+        {{ memory.img_title }}
+
+       
       </h2>
       <p>
         By {{ memory.source }} on {{ memory.date_posted }}
@@ -30,11 +32,40 @@
       <p>
         {{ memory.description }}
       </p>
+
+      
+
     {% endfor %}
 
     <h3>
       Yes. Yes. Yes.
-    </h3>
+    </h3> -->
+
+
+    <div class="container">
+
+      <div class="card" style="width: 18rem;">
+
+        {% for memory in memories %}
+
+        <img src="{{ memory.image.url }}" class="card-img-top" alt="...">
+        <div class="card-body">       
+          <h5 class="card-title">{{ memory.img_title }}</h5>
+          <p class="card-text">{{ memory.description }}</p>
+          <small>Photo dumped <i>{{ memory.date_posted }}</i></small><br>
+          <a href="#" class="btn btn-primary">Read more...</a>                    
+        </div>
+
+        {% endfor %}
+
+      </div>
+
+    </div>
+
+    
+
+
+
     
   </body>
 </html>

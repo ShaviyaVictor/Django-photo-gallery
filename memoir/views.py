@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import photos, categories
 
 
 memories = [
@@ -29,7 +30,8 @@ def home(request) :
 def gallery(request) :
 
   context = {
-    'memories':memories
+    'memories':photos.objects.all(),
+    'categories':categories.objects.all(),
   }
 
 
