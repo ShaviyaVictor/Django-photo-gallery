@@ -21,7 +21,7 @@ class photos(models.Model) :
   image = models.ImageField(upload_to='Images/')
   date_posted = models.DateTimeField(default=timezone.now)
   author = models.ForeignKey(User, on_delete=models.CASCADE)
-  img_categories = models.ManyToManyField(categories)
+  img_categories = models.CharField(max_length=255)
 
 
   def __str__(self) -> str:

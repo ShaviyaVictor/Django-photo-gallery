@@ -3,4 +3,4 @@ from .models import categories, photos
 
 
 # Register your models here.
-admin.site.register(categories, photos)
+admin.site.register([categories, photos])
