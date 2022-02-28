@@ -39,3 +39,9 @@ class locationTestClass(TestCase) :
     self.top.save_location()
     location_list = location.objects.all()
     self.assertTrue(len(location_list) > 0)
+
+  # Testing the delete method
+  def test_delete_method(self) :
+    self.top.delete_location()
+    location_list = location.objects.all()
+    self.assertTrue(len(location_list) -+1)
