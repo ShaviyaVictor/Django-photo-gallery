@@ -33,6 +33,10 @@ class location(models.Model) :
     ordering = ['-name']
 
 
+  def save_location(self) :
+    self.save()
+
+
 
 class photos(models.Model) :
   img_title  = models.CharField(max_length=100)
