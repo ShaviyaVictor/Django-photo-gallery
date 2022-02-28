@@ -33,3 +33,9 @@ class locationTestClass(TestCase) :
   # Testing the instance
   def test_instance(self) :
     self.assertTrue(isinstance(self.top, location))
+
+  # Testing the save method for the location class
+  def test_save_method(self) :
+    self.top.save_location()
+    location_list = location.objects.all()
+    self.assertTrue(len(location_list) > 0)
