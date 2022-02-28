@@ -70,3 +70,11 @@ class photosTestClass(TestCase) :
     self.new_photos.save()
 
     self.new_photos.img_location.add(self.new_location)
+
+
+
+
+    def tearDown(self) :
+      categories.objects.all().delete()
+      location.objects.all().delete()
+      photos.objects.all().delete()
