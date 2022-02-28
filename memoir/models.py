@@ -18,6 +18,10 @@ class categories(models.Model) :
     self.save()
 
 
+  def delete_category(self) :
+    self.delete()
+
+
 
 class location(models.Model) :
   name = models.CharField(max_length=30)
