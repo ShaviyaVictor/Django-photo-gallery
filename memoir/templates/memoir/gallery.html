@@ -44,20 +44,26 @@
 
     <div class="container">
 
-      <div class="card" style="width: 18rem;">
+      <div class="row">
+        <div class="col-4">
 
-        {% for memory in memories %}
+          <div class="card" style="width: 18rem;">
 
-        <img src="{{ memory.image.url }}" class="card-img-top" alt="...">
-        <div class="card-body">       
-          <h5 class="card-title">{{ memory.img_title }}</h5>
-          <p class="card-text">{{ memory.description }}</p>
-          <small>Photo dumped <i>{{ memory.date_posted }}</i></small><br>
-          <a href="#" class="btn btn-primary">Read more...</a>                    
+            {% for memory in memories %}
+    
+            <img src="{{ memory.image.url }}" class="card-img-top" alt="...">
+            <div class="card-body">       
+              <h5 class="card-title">{{ memory.img_title }}</h5>
+              <p class="card-text">{{ memory.description }}</p>
+              <small>Photo dumped <i>{{ memory.date_posted }}</i></small><br>
+              <a href="#" class="btn btn-primary">Read more...</a>                    
+            </div>
+    
+            {% endfor %}
+    
+          </div>
+
         </div>
-
-        {% endfor %}
-
       </div>
 
     </div>
