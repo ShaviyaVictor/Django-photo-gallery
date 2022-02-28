@@ -14,6 +14,10 @@ class categories(models.Model) :
     ordering = ['-name']
 
 
+  def save_category(self) :
+    self.save()
+
+
 
 class location(models.Model) :
   name = models.CharField(max_length=30)
