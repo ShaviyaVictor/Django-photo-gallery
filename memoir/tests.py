@@ -74,7 +74,16 @@ class photosTestClass(TestCase) :
 
 
 
-    def tearDown(self) :
-      categories.objects.all().delete()
-      location.objects.all().delete()
-      photos.objects.all().delete()
+  # def test_search_results(self) :
+  #   search_term = 'Programming'
+  #   photos_found = photos.search_by_title(search_term)
+
+  #   self.assertTrue(len(photos_found) > 0)
+
+
+
+
+  def tearDown(self) :
+    categories.objects.all().delete()
+    location.objects.all().delete()
+    photos.objects.all().delete()

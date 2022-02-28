@@ -58,3 +58,12 @@ class photos(models.Model) :
 
   class Meta :
     ordering = ['-img_title']
+
+
+
+   # Using filter method __icontains
+  @classmethod
+  def search_by_title(cls, search_term) :
+    photo = cls.objects.filter(title__icontains = search_term)
+
+    return photo
