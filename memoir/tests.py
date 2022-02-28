@@ -22,3 +22,14 @@ class categoriesTestClass(TestCase) :
     self.top.delete_category()
     category_list = categories.objects.all()
     self.assertTrue(len(category_list) -+1)
+
+
+
+class locationTestClass(TestCase) :
+  # Set up method
+  def setUp(self) :
+    self.top = location(id='1')
+
+  # Testing the instance
+  def test_instance(self) :
+    self.assertTrue(isinstance(self.top, location))
