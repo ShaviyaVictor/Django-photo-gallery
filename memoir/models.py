@@ -37,6 +37,10 @@ class location(models.Model) :
     self.save()
 
 
+  def delete_location(self) :
+    self.delete()
+
+
 
 class photos(models.Model) :
   img_title  = models.CharField(max_length=100)
