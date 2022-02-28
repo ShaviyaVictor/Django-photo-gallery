@@ -10,3 +10,9 @@ class categoriesTestClass(TestCase) :
   # Testing the instance
   def test_instance(self) :
     self.assertTrue(isinstance(self.top, categories))
+
+  # Testing the save_method for the categories class
+  def test_save_method(self) :
+    self.top.save_category()
+    category_list = categories.objects.all()
+    self.assertTrue(len(category_list) > 0)
