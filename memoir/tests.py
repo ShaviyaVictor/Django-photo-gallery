@@ -1,5 +1,6 @@
 from django.test import TestCase
 from .models import categories, location, photos
+from django.contrib.auth.models import User
 
 # Create your tests here.
 class categoriesTestClass(TestCase) :
@@ -45,3 +46,27 @@ class locationTestClass(TestCase) :
     self.top.delete_location()
     location_list = location.objects.all()
     self.assertTrue(len(location_list) -+1)
+
+
+
+class photosTestClass(TestCase) :
+  # Set up methods
+  def setUp(self) :
+
+    # Creating a new category
+    self.new_category = categories(name='nature')
+    self.new_category.save_category()
+
+
+    # Creating a new location
+    self.new_location = location(name='Nairobi')
+    self.new_location.save_location()
+
+
+    # Creating a new photos instance
+    self.new_photos = photos(img_title='Test', img_description='Testing to see the instance', img_categories=self.new_category)
+
+
+    self.new_photos.save()
+
+    self.new_photos.img_location.add(self.new_location)
